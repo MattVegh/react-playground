@@ -6,6 +6,18 @@ import Counter from './state/Counter';
 import HelloWorld from './state-drill/HelloWorld';
 import Bomb from './state-drill/Bomb';
 import RouletteGun from './state-drill/RouletteGun';
+import Tabs from './state/Tabs';
+import Accordion from './state-drill/Accordion';
+
+const tabsProp = [
+  { name: 'First tab',
+    content: 'Content of first tab' },
+  { name: 'Second tab',
+    content: 'second tab of content' },
+  { name: 'Third tab',
+    content: 'content for third tab' },
+];
+
 
 class App extends Component {
   render() {
@@ -19,7 +31,8 @@ class App extends Component {
         <HelloWorld />
         <Bomb />
         <RouletteGun />
-        
+        <Tabs tabs={tabsProp} />
+        <Accordion />
       </div>
       
     );
